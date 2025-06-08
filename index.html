@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankit Vishwakarma - Digital Product Leader</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Ankit Vishwakarma - Digital Product Leader specializing in payments, AI innovation, and product management.">
+    <meta name="keywords" content="product management, digital payments, AI innovation, fintech">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Ankit Vishwakarma - Digital Product Leader">
+    <meta property="og:description" content="Digital Product Leader specializing in payments, AI innovation, and product management.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/css/styles.css">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <style>
         @keyframes float {
@@ -32,16 +49,27 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 min-h-screen">
+    <!-- Particle Background -->
+    <div id="particles-js" class="hero-particles"></div>
+
     <div class="container mx-auto px-4 py-8">
-        <header class="text-center mb-12 animate__animated animate__fadeIn">
+        <!-- Hero Section -->
+        <header class="text-center mb-12 relative z-10">
             <div class="flex justify-center mb-4">
-                <img src="/api/placeholder/200/200" alt="Ankit Vishwakarma" class="rounded-full w-48 h-48 object-cover border-4 border-blue-500 floating-icon">
+                <div class="profile-image-container">
+                    <img src="src/assets/images/AV_header_image.png" alt="Ankit Vishwakarma" class="profile-image floating-icon">
+                </div>
             </div>
             <h1 class="text-5xl font-bold text-blue-800 mb-2">🚀 Ankit Vishwakarma</h1>
             <p class="text-2xl text-blue-600">Digital Alchemist | Payments & Product Innovation Expert</p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Get in Touch</a>
+                <a href="#case-studies" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition">View Work</a>
+            </div>
         </header>
 
-        <section class="bg-white shadow-lg rounded-lg p-8 mb-8 animate__animated animate__slideInUp">
+        <!-- Experience Section -->
+        <section class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 class="text-3xl font-semibold text-blue-700 mb-6">💼 Professional Journey</h2>
             
             <div class="space-y-6">
@@ -90,70 +118,135 @@
             </div>
         </section>
 
-        <section class="bg-white shadow-lg rounded-lg p-8 mb-8 animate__animated animate__slideInUp">
-            <h2 class="text-3xl font-semibold text-blue-700 mb-6">🛠️ Tech & Skills Ecosystem</h2>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-blue-50 p-4 rounded-lg text-center hover:bg-blue-100 transition">
-                    <span class="text-4xl block mb-2">🌐</span>
-                    <h4 class="font-semibold">Cloud Platforms</h4>
-                    <p class="text-sm text-gray-600">AWS, GCP, Azure</p>
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6">📚 Case Studies</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="case-study-card bg-blue-50 p-6 rounded-lg">
+                    <span class="text-3xl mb-4 block">💳</span>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">Mi Pay Launch</h3>
+                    <p class="text-gray-700 mb-4">Launched and scaled digital payments platform to 60M+ users.</p>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Achieved 20M transactions in first year</li>
+                        <li>95% user satisfaction rate</li>
+                        <li>Reduced transaction failure rate to 0.1%</li>
+                    </ul>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
                 </div>
-                <div class="bg-blue-50 p-4 rounded-lg text-center hover:bg-blue-100 transition">
-                    <span class="text-4xl block mb-2">🎨</span>
-                    <h4 class="font-semibold">Design Tools</h4>
-                    <p class="text-sm text-gray-600">Figma, Sketch, Adobe XD</p>
-                </div>
-                <div class="bg-blue-50 p-4 rounded-lg text-center hover:bg-blue-100 transition">
-                    <span class="text-4xl block mb-2">📊</span>
-                    <h4 class="font-semibold">Analytics</h4>
-                    <p class="text-sm text-gray-600">Google Analytics, Tableau</p>
-                </div>
-                <div class="bg-blue-50 p-4 rounded-lg text-center hover:bg-blue-100 transition">
-                    <span class="text-4xl block mb-2">🤝</span>
-                    <h4 class="font-semibold">Collaboration</h4>
-                    <p class="text-sm text-gray-600">JIRA, Trello, Miro</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-white shadow-lg rounded-lg p-8 animate__animated animate__slideInUp">
-            <h2 class="text-3xl font-semibold text-blue-700 mb-6">🏆 Key Achievements</h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="bg-blue-50 p-4 rounded-lg">
-                    <span class="text-3xl block mb-2">🎤</span>
-                    <h4 class="font-semibold">Global Fintech Festival Speaker</h4>
-                    <p class="text-sm text-gray-600">Shared insights on innovative payment solutions</p>
-                </div>
-                <div class="bg-blue-50 p-4 rounded-lg">
-                    <span class="text-3xl block mb-2">🏅</span>
-                    <h4 class="font-semibold">Industry Recognition</h4>
-                    <p class="text-sm text-gray-600">Recognized by NPCI, MasterCard, Visa</p>
-                </div>
-                <div class="bg-blue-50 p-4 rounded-lg">
-                    <span class="text-3xl block mb-2">👥</span>
-                    <h4 class="font-semibold">Mentorship</h4>
-                    <p class="text-sm text-gray-600">Guiding aspiring Product Managers</p>
+                
+                <div class="case-study-card bg-blue-50 p-6 rounded-lg">
+                    <span class="text-3xl mb-4 block">🏦</span>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">Digital Banking Transformation</h3>
+                    <p class="text-gray-700 mb-4">Led digital transformation at Kotak Bank.</p>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Implemented BHIM UPI integration</li>
+                        <li>40% increase in digital transactions</li>
+                        <li>Reduced customer support calls by 30%</li>
+                    </ul>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
                 </div>
             </div>
         </section>
 
-        <footer class="text-center mt-8 animate__animated animate__fadeIn">
-            <div class="flex justify-center space-x-4 mb-4">
-                <a href="mailto:askankitv@gmail.com" class="text-blue-600 hover:text-blue-800 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Email
-                </a>
-                <a href="https://www.linkedin.com/in/ankit-v/" class="text-blue-600 hover:text-blue-800 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.768s.784-1.768 1.75-1.768 1.75.79 1.75 1.768-.784 1.768-1.75 1.768zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    LinkedIn
-                </a>
+        <!-- AI Experiments Section -->
+        <section class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6">🤖 AI Experiments</h2>
+            
+            <!-- Comics Subsection -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">🎨 AI Comics</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="comic-panel bg-blue-50 rounded-lg overflow-hidden">
+                        <img src="/api/placeholder/300/300" alt="Comic Panel 1" class="w-full h-auto">
+                    </div>
+                    <!-- Add more comic panels -->
+                </div>
             </div>
+            
+            <!-- YouTube Channel -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">📺 YouTube Channel</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="youtube-preview rounded-lg overflow-hidden">
+                        <img src="/api/placeholder/400/225" alt="Video Thumbnail" class="w-full h-auto">
+                        <div class="p-4 bg-blue-50">
+                            <h4 class="font-semibold">AI in Product Management</h4>
+                            <p class="text-gray-600">10K views • 2 weeks ago</p>
+                        </div>
+                    </div>
+                    <!-- Add more video previews -->
+                </div>
+            </div>
+            
+            <!-- AI-Vibe Coding -->
+            <div>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">💻 AI-Vibe Coding</h3>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg overflow-x-auto">
+<code>// AI-assisted code example
+function optimizeUserFlow(data) {
+    const aiSuggestions = analyzeUserBehavior(data);
+    return implementOptimizations(aiSuggestions);
+}</code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6">📬 Let's Connect</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <form class="contact-form space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="name">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="email">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full">Send Message</button>
+                    </form>
+                    <div class="success-message hidden mt-4 text-green-600">Message sent successfully!</div>
+                    <div class="error-message hidden mt-4 text-red-600">Error sending message. Please try again.</div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Connect on Social Media</h3>
+                    <div class="space-y-4">
+                        <a href="https://www.linkedin.com/in/ankit-v/" class="social-icon flex items-center text-gray-700 hover:text-blue-600">
+                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.768s.784-1.768 1.75-1.768 1.75.79 1.75 1.768-.784 1.768-1.75 1.768zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:askankitv@gmail.com" class="social-icon flex items-center text-gray-700 hover:text-blue-600">
+                            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-8">
             <p class="text-gray-600">🚀 Transforming Complex Problems into Elegant Solutions</p>
+            <button class="dark-mode-toggle mt-4 bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 transition">
+                Toggle Dark Mode
+            </button>
         </footer>
     </div>
+
+    <!-- Scripts -->
+    <script src="src/js/main.js"></script>
 </body>
 </html>
