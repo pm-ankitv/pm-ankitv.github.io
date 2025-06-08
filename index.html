@@ -155,26 +155,32 @@
             <!-- Comics Subsection -->
             <div class="mb-12">
                 <h3 class="text-2xl font-semibold text-blue-600 mb-4">🎨 AI Comics</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="comic-panel bg-blue-50 rounded-lg overflow-hidden">
-                        <img src="/api/placeholder/300/300" alt="Comic Panel 1" class="w-full h-auto">
-                    </div>
-                    <!-- Add more comic panels -->
+                <p class="text-gray-700 mb-6">Introducing Comics Uncle, an AI-powered platform that creates personalized comic stories for children. This innovative tool makes birthdays extra special by turning your child into the hero of their very own comic adventure, creating lasting memories they'll cherish forever.</p>
+                <div class="grid grid-cols-1 gap-4">
+                    <a href="https://comics-uncle.lovable.app/" target="_blank" class="comic-panel bg-blue-50 rounded-lg overflow-hidden p-6 hover:shadow-lg transition-all duration-300">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-2">Comics Uncle - Personalized Birthday Stories</h4>
+                        <p class="text-gray-600">Make your child's birthday unforgettable with custom AI-generated comic stories where they're the star! Each story is uniquely crafted to bring smiles and create magical birthday memories.</p>
+                    </a>
                 </div>
             </div>
             
             <!-- YouTube Channel -->
             <div class="mb-12">
                 <h3 class="text-2xl font-semibold text-blue-600 mb-4">📺 YouTube Channel</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="youtube-preview rounded-lg overflow-hidden">
-                        <img src="/api/placeholder/400/225" alt="Video Thumbnail" class="w-full h-auto">
+                <p class="text-gray-700 mb-6">Explore my AI experiments in content creation! This channel and all its content are entirely generated using artificial intelligence - from script writing to video production, showcasing the incredible possibilities of AI in creative media.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="https://www.youtube.com/@LyricLens" target="_blank" class="youtube-preview rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300">
                         <div class="p-4 bg-blue-50">
-                            <h4 class="font-semibold">AI in Product Management</h4>
-                            <p class="text-gray-600">10K views • 2 weeks ago</p>
+                            <h4 class="font-semibold">LyricLens Channel</h4>
+                            <p class="text-gray-600">AI-Powered Music Analysis</p>
                         </div>
-                    </div>
-                    <!-- Add more video previews -->
+                    </a>
+                    <a href="https://youtu.be/E7t-cp0Hu4k?si=1RSqfRrj_pAF0Z3V" target="_blank" class="youtube-preview rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="p-4 bg-blue-50">
+                            <h4 class="font-semibold">Featured Video</h4>
+                            <p class="text-gray-600">Latest AI Insights</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             
@@ -197,43 +203,21 @@ function optimizeUserFlow(data) {
         <section id="contact" class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 class="text-3xl font-semibold text-blue-700 mb-6">📬 Let's Connect</h2>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <form class="contact-form space-y-4">
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="name">Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="email">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500" required></textarea>
-                        </div>
-                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full">Send Message</button>
-                    </form>
-                    <div class="success-message hidden mt-4 text-green-600">Message sent successfully!</div>
-                    <div class="error-message hidden mt-4 text-red-600">Error sending message. Please try again.</div>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Connect on Social Media</h3>
-                    <div class="space-y-4">
-                        <a href="https://www.linkedin.com/in/ankit-v/" class="social-icon flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.768s.784-1.768 1.75-1.768 1.75.79 1.75 1.768-.784 1.768-1.75 1.768zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                            LinkedIn
-                        </a>
-                        <a href="mailto:askankitv@gmail.com" class="social-icon flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            Email
-                        </a>
-                    </div>
+            <div class="space-y-6">
+                <h3 class="text-xl font-semibold mb-4">Connect on Social Media</h3>
+                <div class="space-y-4">
+                    <a href="https://www.linkedin.com/in/ankit-v/" class="social-icon flex items-center text-gray-700 hover:text-blue-600">
+                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.768s.784-1.768 1.75-1.768 1.75.79 1.75 1.768-.784 1.768-1.75 1.768zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:askankitv@gmail.com" class="social-icon flex items-center text-gray-700 hover:text-blue-600">
+                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Email
+                    </a>
                 </div>
             </div>
         </section>
