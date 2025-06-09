@@ -174,18 +174,50 @@
                     </div>
                 </div>
 
-                <div class="experience-card bg-blue-50 p-6 rounded-lg relative">
-                    <div class="flex items-center mb-4">
-                        <h3 class="text-2xl font-bold text-blue-800">Kotak Bank | Product Manager - Digital Initiatives</h3>
-                        <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">Sept 2015 - Nov 2017</span>
+                <div>
+                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" onclick="toggleDetails('kotakDetails')">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold text-blue-800">Kotak Bank | Product Manager - Digital Initiatives</h3>
+                            <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">Sept 2015 - Nov 2017</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Managed digital banking product portfolio</li>
+                            <li>Developed Kotak Wallet and implemented BHIM UPI</li>
+                            <li>Conducted comprehensive user research and UI/UX enhancements</li>
+                            <li>Delivered key digital banking projects including bill payment systems</li>
+                        </ul>
+                        <div class="absolute top-4 right-4 text-4xl opacity-20">🏦</div>
+                        <div class="flex items-center mt-4 text-blue-600">
+                            <span class="text-sm">Click to expand</span>
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
                     </div>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Managed digital banking product portfolio</li>
-                        <li>Developed Kotak Wallet and implemented BHIM UPI</li>
-                        <li>Conducted comprehensive user research and UI/UX enhancements</li>
-                        <li>Delivered key digital banking projects including bill payment systems</li>
-                    </ul>
-                    <div class="absolute top-4 right-4 text-4xl opacity-20">🏦</div>
+
+                    <div id="kotakDetails" class="hidden mt-4 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500" style="display: none;">
+                        <div class="prose max-w-none">
+                            <h4 class="text-xl font-bold text-blue-800 mb-4">Situation:</h4>
+                            <p class="mb-4">As mobile banking adoption accelerated, Kotak aimed to enhance its digital offerings within the app—specifically around high-frequency commerce use cases like bill payments, travel, and shopping. However, user conversion and retention within these sections lagged behind expectations.</p>
+                            
+                            <h4 class="text-xl font-bold text-blue-800 mb-4">Task:</h4>
+                            <p class="mb-4">As an individual contributor, I was responsible for improving funnel performance, driving product enhancements, and delivering measurable growth in user engagement and repeat usage.</p>
+                            
+                            <h4 class="text-xl font-bold text-blue-800 mb-4">Action:</h4>
+                            <ul class="list-disc list-inside space-y-2 mb-4">
+                                <li>Managed the <strong>e-commerce vertical within the mobile banking app</strong>, focusing on travel bookings, shopping integrations, and bill payments.</li>
+                                <li>Used <strong>Google Analytics</strong> to monitor the conversion funnel and identify drop-off points. Iteratively improved feature performance through targeted A/B testing and design changes.</li>
+                                <li>Conducted <strong>qualitative interviews and quantitative surveys</strong> to understand user pain points, then redefined the <strong>end-to-end user journey</strong> for bill payments and other high-utility features.</li>
+                                <li>Delivered <strong>monthly product health reports</strong> to senior management, combining performance metrics with actionable plans to improve KPIs.</li>
+                            </ul>
+                            
+                            <h4 class="text-xl font-bold text-blue-800 mb-4">Result:</h4>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Revamped user journeys led to a <strong>2X increase in new user onboarding</strong> and a <strong>4X boost in repeat user activity</strong> within the e-commerce section.</li>
+                                <li>Helped position the mobile banking app as a more holistic financial and lifestyle platform, driving higher engagement per active user.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="experience-card bg-blue-50 p-6 rounded-lg relative">
