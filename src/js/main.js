@@ -186,6 +186,36 @@ const initDarkMode = () => {
     });
 };
 
+// Toggle details for experience cards
+function toggleDetails(id) {
+    const details = document.getElementById(id);
+    const isHidden = details.classList.contains('hidden');
+    
+    // Add a smooth transition
+    if (isHidden) {
+        details.classList.remove('hidden');
+        details.style.opacity = '0';
+        details.style.maxHeight = '0';
+        
+        // Force reflow
+        details.offsetHeight;
+        
+        // Animate in
+        details.style.transition = 'opacity 0.3s ease, max-height 0.5s ease';
+        details.style.opacity = '1';
+        details.style.maxHeight = details.scrollHeight + 'px';
+    } else {
+        // Animate out
+        details.style.opacity = '0';
+        details.style.maxHeight = '0';
+        
+        // Hide after animation
+        setTimeout(() => {
+            details.classList.add('hidden');
+        }, 300);
+    }
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     initParticles();

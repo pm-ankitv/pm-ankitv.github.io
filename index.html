@@ -80,7 +80,7 @@
                             <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">June 2023 - Aug 2024</span>
                         </div>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Managed international payments roadmap for multiple global markets</li>
+                            <li>Managed international payments roadmap for multiple global markets (including US, UK, Australia, Japan, Singapore)</li>
                             <li>Reduced payment friction from 15% to 4% through innovative automation</li>
                             <li>Enabled seamless payment experiences using Apple Pay, Plaid, PayPal</li>
                             <li>Led 2 Agile development teams of 18 developers</li>
@@ -220,18 +220,52 @@
                     </div>
                 </div>
 
-                <div class="experience-card bg-blue-50 p-6 rounded-lg relative">
-                    <div class="flex items-center mb-4">
-                        <h3 class="text-2xl font-bold text-blue-800">BookMyShow.com | Full Stack Engineer & RnD Lead</h3>
-                        <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">Jan 2010 - Jun 2015</span>
+                <div>
+                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" onclick="toggleDetails('bmsDetails')">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold text-blue-800">BookMyShow.com | Full Stack Engineer & RnD Lead</h3>
+                            <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">Jan 2010 - Jun 2015</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Built and scaled high-concurrency ticketing systems for major events like IPL and Sunburn, achieving 80 TPS</li>
+                            <li>Promoted to Team Lead, managing 12 engineers and overseeing delivery and team growth</li>
+                            <li>Led R&D initiatives for architectural improvements</li>
+                            <li>Created a DIY platform for event organizers, expanding the platform's reach and reducing ops overhead</li>
+                        </ul>
+                        <div class="absolute top-4 right-4 text-4xl opacity-20">🎫</div>
+                        <div class="flex items-center mt-4 text-blue-600">
+                            <span class="text-sm">Click to expand</span>
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
                     </div>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Built and scaled high-concurrency ticketing systems for major events like IPL and Sunburn, achieving 80 TPS</li>
-                        <li>Promoted to Team Lead, managing 12 engineers and overseeing delivery and team growth</li>
-                        <li>Led R&D initiatives for architectural improvements</li>
-                        <li>Created a DIY platform for event organizers, expanding the platform's reach and reducing ops overhead</li>
-                    </ul>
-                    <div class="absolute top-4 right-4 text-4xl opacity-20">🎫</div>
+
+                    <div id="bmsDetails" class="hidden mt-4 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500" style="display: none;">
+                        <div class="prose max-w-none">
+                            <h4 class="text-xl font-bold text-blue-800 mb-4">Situation:</h4>
+                            <p class="mb-4">As one of India's fastest-growing entertainment platforms, BookMyShow faced the challenge of handling unpredictable, high-concurrency traffic during blockbuster events like IPL and Sunburn while also expanding its platform capabilities for event organizers.</p>
+                            
+                            <h4 class="text-xl font-bold text-blue-800 mb-4">Task:</h4>
+                            <p class="mb-4">Initially joining as a full stack engineer, I was responsible for building robust, scalable ticketing systems. As the company scaled, I took on broader responsibilities—leading engineering teams, driving innovation, and supporting the tech backbone for national-level events.</p>
+                            
+                            <h4 class="text-xl font-bold text-blue-800 mb-4">Action:</h4>
+                            <ul class="list-disc list-inside space-y-2 mb-4">
+                                <li><strong>Engineered and scaled the core ticketing system</strong>, ensuring reliability under intense spikes in demand during flash sales.</li>
+                                <li>Achieved <strong>80 transactions per second (TPS)</strong> during peak events—a high-concurrency benchmark—by optimizing backend infrastructure and caching strategies.</li>
+                                <li>Grew with the company to become a <strong>Team Lead managing 12 engineers</strong>, overseeing delivery, code quality, and mentorship.</li>
+                                <li>Led <strong>R&D initiatives</strong> for the tech team, piloting architectural improvements and evaluating emerging technologies to enhance platform performance.</li>
+                                <li>As an individual contributor, designed a <strong>DIY event management platform</strong> that empowered organizers to list and manage their own events—expanding BookMyShow's reach and reducing operational overhead.</li>
+                            </ul>
+                            
+                            <h4 class="text-xl font-bold text-blue-800 mb-4">Result:</h4>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Successfully supported high-traffic events with zero downtime, helping BookMyShow become the trusted platform for premier events in India.</li>
+                                <li>Laid the technical foundation for scalable event listings and increased revenue through platform self-service capabilities.</li>
+                                <li>Played a key role in the company's early-stage growth through both hands-on coding and engineering leadership.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
