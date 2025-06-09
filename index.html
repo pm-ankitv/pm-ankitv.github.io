@@ -74,7 +74,7 @@
             
             <div class="space-y-6">
                 <div>
-                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" onclick="toggleDetails('igDetails')">
+                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" data-details="igDetails">
                         <div class="flex items-center mb-4">
                             <h3 class="text-2xl font-bold text-blue-800">IG Markets | Product Manager - Payments</h3>
                             <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">June 2023 - Aug 2024</span>
@@ -121,7 +121,7 @@
                 </div>
 
                 <div>
-                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" onclick="toggleDetails('xiaomiDetails')">
+                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" data-details="xiaomiDetails">
                         <div class="flex items-center mb-4">
                             <h3 class="text-2xl font-bold text-blue-800">Xiaomi India | Head of Product Management</h3>
                             <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">Dec 2017 - Dec 2022</span>
@@ -175,7 +175,7 @@
                 </div>
 
                 <div>
-                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" onclick="toggleDetails('kotakDetails')">
+                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" data-details="kotakDetails">
                         <div class="flex items-center mb-4">
                             <h3 class="text-2xl font-bold text-blue-800">Kotak Bank | Product Manager - Digital Initiatives</h3>
                             <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">Sept 2015 - Nov 2017</span>
@@ -221,7 +221,7 @@
                 </div>
 
                 <div>
-                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" onclick="toggleDetails('bmsDetails')">
+                    <div class="experience-card bg-blue-50 p-6 rounded-lg relative cursor-pointer hover:shadow-lg transition-all duration-300" data-details="bmsDetails">
                         <div class="flex items-center mb-4">
                             <h3 class="text-2xl font-bold text-blue-800">BookMyShow.com | Full Stack Engineer & RnD Lead</h3>
                             <span class="ml-4 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm">Jan 2010 - Jun 2015</span>
@@ -411,19 +411,28 @@
     </div>
 
     <script>
-        function toggleDetails(id) {
-            const details = document.getElementById(id);
-            const card = details.previousElementSibling;
-            const arrow = card.querySelector('svg');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all experience cards
+            const cards = document.querySelectorAll('.experience-card');
             
-            if (details.style.display === 'none' || !details.style.display) {
-                details.style.display = 'block';
-                arrow.style.transform = 'rotate(180deg)';
-            } else {
-                details.style.display = 'none';
-                arrow.style.transform = 'rotate(0deg)';
-            }
-        }
+            // Add click event listener to each card
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Get the ID from the card's data attribute
+                    const detailsId = this.getAttribute('data-details');
+                    const details = document.getElementById(detailsId);
+                    const arrow = this.querySelector('svg');
+                    
+                    if (details.style.display === 'none' || !details.style.display) {
+                        details.style.display = 'block';
+                        arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        details.style.display = 'none';
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
     </script>
     <script src="/src/js/main.js"></script>
 </body>
